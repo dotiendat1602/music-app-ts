@@ -11,6 +11,7 @@ export const index = async (req: Request, res: Response) => {
     console.log(topics);
 
     res.render("client/pages/topics/index", {
+        pageTitle: "Danh sách chủ đề",
         topics: topics
     });
 }
